@@ -1,11 +1,16 @@
 {% extends 'flatpages/default.html' %}
 
+{% block style %}
+{% load static %}
+<link href="{% static 'css/about_styles.css'%}" rel="stylesheet"/>
+{% endblock style %}
+
 {% block title %}
-    {{ flatpage.title }}
+{{ flatpage.title }}
 {% endblock title %}
 
 {% block content %}
-    {{ flatpage.content }}
+{{ flatpage.content }}
 {% endblock content %}
 
 
